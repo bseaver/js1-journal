@@ -20,15 +20,30 @@ If the sentence is over 8 words, only display those first 8 words. Be sure to ca
 
 
 ## Setup Requirements
+npm
+gulp
+bower
+sass
+
 
 ## Installation Instructions
 * Clone project.
 
 Acquire API key from openweathermap.org.
 
-Create .env file at root of project folder with the single :
+Create .env file at root of project folder with the single line:
 
   exports.apiKey = "your-openweathermap.org-API-key-here";
+
+then run:
+
+npm install
+
+bower install
+
+gulp dev (gulp prod to uglify/minify)
+
+gulp serve
 
 
 npm init
