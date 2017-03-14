@@ -57,10 +57,27 @@ npm install bower-files --save-dev
 npm install gulp-jshint --save-dev
 
 gulp jsBrowserify
- 
+
 gulp serve
 
 gulp jshint
+
+## Remove build folder from git project (after adding it to .gitignore)
+
+git filter-branch --tree-filter 'rm -rf build' --prune-empty HEAD
+
+git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
+
+(edited README.md)
+
+git add README.md
+
+git pair-commit -m "remove build from project"
+
+git gc
+
+git push origin master --force
+
 
 ## Known Bugs
 * No known bugs

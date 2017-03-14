@@ -65,7 +65,7 @@ gulp.task('jshint', function() {
   .pipe(jshint.reporter('default'));
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', ['dev'], function() {
   browserSync.init({
     server: {
       baseDir: "./",
@@ -75,7 +75,12 @@ gulp.task('serve', function() {
 
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
+  gulp.watch(['*.html'], ['htmlBuild']);
 
+});
+
+gulp.task('htmlBuild', function() {
+  browserSync.reload();
 });
 
 gulp.task('jsBuild', ['dev', 'jshint'], function(){
