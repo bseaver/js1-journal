@@ -42,6 +42,8 @@ npm install jshint --save-dev
 
 npm install vinyl-source-stream --save-dev
 
+npm install browser-sync --save-dev
+
 bower install jquery --save
 
 bower install bootstrap --save
@@ -56,6 +58,7 @@ npm install gulp-jshint --save-dev
 
 gulp jsBrowserify
 
+gulp serve
 
 gulp jshint
 

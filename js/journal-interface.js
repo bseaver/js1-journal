@@ -14,7 +14,7 @@ $(document).ready(function() {
             journal.getTeaser() +
           "</li>" +
           "<li>" +
-            "Word count: " + journal.wordCount() + ", Vowel Count: " + journal.vowelCount() + ", Consanant Count: " + journal.consonantCount() +
+            "Word count: " + journal.wordCount() + ", Vowel Count: " + journal.vowelCount() + ", Consonant Count: " + journal.consonantCount() +
           "</li>" +
         "</ul>" +
       "</li>";

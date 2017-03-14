@@ -1,3 +1,6 @@
 node_modules/
 bower_components/
 tmp/
+build/
+.env
+.DS_Store
