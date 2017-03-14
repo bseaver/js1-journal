@@ -57,7 +57,7 @@ npm install bower-files --save-dev
 npm install gulp-jshint --save-dev
 
 gulp jsBrowserify
-
+ 
 gulp serve
 
 gulp jshint
