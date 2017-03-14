@@ -14,7 +14,7 @@ $(document).ready(function() {
     event.preventDefault();
     var city = $('#location').val();
     $('#location').val("");
-    $('.showWeather').text("The city you have chosen is " + city + ".");
+    // $('.showWeather').text("The city you have chosen is " + city + ".");
     currentWeatherObject.getWeather(city, displayWeather);
 
     console.log("Notice: The GET request has been made.");

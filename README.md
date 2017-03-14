@@ -85,6 +85,10 @@ git gc
 
 git push origin master --force
 
+gem install sass
+
+npm install gulp-sass gulp-sourcemaps --save-dev
+
 
 ## Known Bugs
 * No known bugs
