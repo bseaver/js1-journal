@@ -24,6 +24,13 @@ If the sentence is over 8 words, only display those first 8 words. Be sure to ca
 ## Installation Instructions
 * Clone project.
 
+Acquire API key from openweathermap.org.
+
+Create .env file at root of project folder with the single :
+
+  exports.apiKey = "your-openweathermap.org-API-key-here";
+
+
 npm init
 
 npm install gulp --save-dev
