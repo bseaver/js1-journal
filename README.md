@@ -20,9 +20,11 @@ If the sentence is over 8 words, only display those first 8 words. Be sure to ca
 
 
 ## Setup Requirements
+node.js (for npm)
 npm
 gulp
 bower
+ruby (for gem install sass)
 sass
 
 
@@ -40,6 +42,8 @@ then run:
 npm install
 
 bower install
+
+gem install sass
 
 gulp dev (gulp prod to uglify/minify)
 
